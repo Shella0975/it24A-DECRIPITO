@@ -1,0 +1,19 @@
+[
+    {
+        "latitude": 8.360283, 
+        "longitude" : 124.867513,
+        "message" : "SC building"
+    },
+      
+    {
+        "latitude": 8.359667,
+        "longitude" :  124.869179,
+        "message" : "CSS department"
+    },
+
+    {
+        "latitude": 8.359219, 
+        "longitude" : 124.868583,
+        "message" : "BA building"
+    }
+]

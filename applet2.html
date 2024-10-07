@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Applet 2 - Leaflet Map</title>
+
+    
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            color: rgb(20, 3, 3);
+        }
+        .container{
+            width: 100%;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            justify-content: center;
+        }
+        #map{
+            width: 100%;
+            height: 450px;
+          
+        }
+
+
+        .btn-container h4{
+            margin-bottom: 1.5rem;
+        }
+        .btn-container button{
+           margin-bottom: 1.5rem;
+        }
+
+        .btn-container #btnclear {
+           margin-left: 15rem;
+        }
+        
+    </style>
+    
+</head>
+
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(230, 179, 12, 0.847);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">about me</a>
+        <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Applets
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="applet-2.html">leaflet and open street map</a></li>
+              <li><a class="dropdown-item" href="applet-1.html">event button logger</a></li>
+            </ul>
+          </li>
+        
+      </div>
+    </div>
+
+</nav>
+
+<body>
+ 
+    
+    <div class="container">
+        <h2>Leaflet Map</h2>
+        <div id="map"></div>
+        <div class="btn-container">
+          <h4 id="logCount">Attendance Count: </h4>
+          <button class="btn btn-primary" id="btn">SC Building</button>
+          <h4 id="logCountBA">Attendance Count: </h4>
+          <button class="btn btn-primary" id="btn1">BA building</button>
+              <h4 id="logCountCCS">Attendance Count: </h4>
+              <button class="btn btn-primary" id="btn2">CSS Laboratory 1</button>
+                      <div id="logContainer"></div> 
+                      <button class="btn btn-primary" id="btnclear">Clear</button>
+        </div>
+          
+    </div>
+<script src="applet-2.js"></script>
+</body>
+
+</html>
