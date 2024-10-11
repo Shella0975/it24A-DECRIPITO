@@ -13,7 +13,11 @@ class DataLogger {
         const time = new Date().toLocaleString();
         this.loggedData.push(time);
         this.updateCardContainer();
-   
+    }
+    clearLogs() {
+        this.loggedData = [];
+        this.updateCardContainer();
+    }
    
 
       
