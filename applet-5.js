@@ -96,5 +96,6 @@ class WeatherService extends WeatherApp {
     }
 }
 
+
 const apiKey = "b692a3f67df816193e58220ef3aca2d3"; 
 const weatherApp = new WeatherService(apiKey);
