@@ -22,27 +22,17 @@
         body {
             background-color: #f8f8f0;
         }
-
-        .applet-container{
-            margin-top: 1rem;
-            margin-left: 2rem;
-        }
-
-        .input-search{
-          margin-left: 3rem;
-          margin-top: 2rem;
-          width:50%;
-        }
     </style>
 
 </head>
 
-<!--Navigation bar added-->
+
+
 
 
 <body>
     <div>
-        <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #ffa351, #ffbe7b, #eed971);">
+        <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #ebf565, #5e4227, #695d22);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -87,29 +77,45 @@
 
     <body>
 
-        <body>
-
-            <div class="container">
-                <h1>Weather App</h1>
-
-                
-                <!--Textbox-->
-                <input type="text" id="cityInput" placeholder="Enter city name" />
-                <button id="getWeatherBtn" class="btn btn-primary">Get Weather</button>
-
-                <!--Via Geolocation-->
-                <button id="getLocationBtn" class="btn btn-secondary">Use My Location</button>
-
-                <div id="weatherCard" class="weather-card" style="display: none;">
-                    <br>
-                    <h2 id="cityName"></h2>
-                    <p id="temperature"></p>
-                    <p id="description"></p>
-                    <p id="humidity"></p>
+        <div class="container text-center">
+            <h1 style="text-align: center; font-weight: bold; margin-top: 2rem;">OpenWeather App</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="contain" style="margin-top: 2rem;">
+                        <h3>Apikey</h3>
+                        <input type="text" id="apiInput" placeholder="Enter API Key" />
+                    </div>
                 </div>
             </div>
-            <script src="applet-5.js"></script>
-        </body>
+            <div class="row" style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+                <div class="col">
+                    <div class="container">
 
-        
+                        <input type="text" id="cityInput" placeholder="Enter city name" />
+                        <button id="getWeatherBtn" class="btn btn-primary" style="margin-left: 1rem;">Get
+                            Weather</button>
+                        <button id="getLocationBtn" class="btn btn-secondary" style="margin-left: 0.5rem;">Use My
+                            Location</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="weatherCard" class="weather-card" style="display: none;  background: linear-gradient(to right, #ffa351, #ffbe7b);
+            border: 1px solid #ccc; border-radius: 8px; padding: 20px; margin-bottom: 3rem;">
+                            <br>
+                            <h2 id="cityName"></h2>
+                            <p id="temperature"></p>
+                            <p id="description"></p>
+                            <p id="humidity"></p>
+                            <p id="windSpeed"></p>
+                        </div>
+                    </div>
+                </div>
+            </di
+            <script src="./applet-5.js"></script>
+    </body>
+
 </html>
