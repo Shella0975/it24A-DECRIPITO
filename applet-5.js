@@ -101,8 +101,8 @@ class WeatherApp {
                 console.error('Error fetching weather data by coordinates:', error);
             }
             return null;
-        }
-}
+        
 
-const apikey = "b69a3f67df816193e58220ef3aca2d3";
-const weatherApp = new WeatherService();
+const apiKey = "apikey"; 
+const weatherApp = new WeatherService(apiKey);
+
